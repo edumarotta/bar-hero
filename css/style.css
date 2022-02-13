@@ -1,0 +1,215 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Fim do Reset  */
+
+
+:root {
+    --cinza-escuro: #8c947c;
+    --cinza-claro:#bec6ad;
+    --cinza-medio:#a5ad94;
+
+}
+
+body{
+    background-color: #a5ad94;
+}
+
+/*  Incio Header */
+
+
+
+
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    height: 100px;
+    background-color: var(--cinza-escuro);
+    border-radius: 10px;
+    box-shadow: -1px 2px 7px 5px rgba(140,148,124,0.61);
+}
+
+header .container{
+    display: flex;
+    width: 80%;
+    height: 98px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+
+header .logo{
+    margin-top: 40px;
+}
+
+header .container nav{
+    display: flex;
+    margin-top: 40px;
+}
+
+header .container nav .item-menu{
+    margin-left: 30px;
+}
+
+/* Fim Header  */
+
+
+/*  Inicio do Content */
+h1{
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.conteudo{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.container::after{
+    height: 100px;
+    border-bottom:1px solid black ;
+}
+
+.cocktail-name {
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#img-cocktail {
+ 
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    height: 500px;
+}
+
+.card-cocktail{
+    width: 500px;
+    height: 500px;
+    background-color: var(--cinza-escuro);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    box-shadow: -1px 2px 7px 5px rgba(140,148,124,0.61);
+}
+
+.card-cocktail .attribute-names{
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+
+}
+
+
+
+
+.attribute-names{
+    text-align: center;
+    margin-top: 0.2rem;
+    font-size: 2rem;
+    background-color: var(--cinza-medio);
+
+}
+
+
+.item-cocktail{
+    display: flex;
+    margin-top: 1rem;
+    font-size: 1rem;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    justify-content: space-between;
+    
+
+
+
+}
+
+.ingrediente-e-qtd{
+    margin-top: 3rem;
+}   
+
+.ingrediente-e-qtd .ingredient{
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.ingredientes{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.how-make {
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color:var(--cinza-medio);
+    border-radius: 0.2rem;
+
+}
+
+
+
+
+/*  Fim do content */
+
